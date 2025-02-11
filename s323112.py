@@ -4,11 +4,13 @@
 
 import numpy as np
 
+def f(x: np.ndarray) -> np.ndarray:
+    return x[0] + np.sin(x[1]) / 5
 
 def f0(x: np.ndarray) -> np.ndarray:
+    return x[0] + np.sin(x[1]) / 5
     return np.add(np.multiply(0.279087, np.subtract(np.sin(x[1]), np.multiply(1.02334, np.multiply(0.994575, np.multiply(np.sin(x[1]), 0.279087))))), x[0])
     return np.add(x[0], np.multiply(-0.140281, np.multiply(np.subtract(-0.400897, np.cos(np.multiply(np.sin(np.cos(x[1])), np.subtract(np.multiply(x[1], x[1]), np.multiply(np.multiply(np.sin(x[1]), 0.426575), np.multiply(np.subtract(-0.140281, np.cos(np.multiply(np.sin(x[1]), np.subtract(1.25265, np.multiply(np.multiply(np.sin(x[1]), 0.426575), np.multiply(np.subtract(-0.140281, np.multiply(np.multiply(np.sin(x[1]), 0.426575), np.multiply(np.subtract(-0.140281, np.sin(np.subtract(np.subtract(0.916315, np.sin(np.sin(np.multiply(1.28782, x[1])))), np.multiply(-0.140281, x[1])))), np.multiply(1.28782, x[1])))), np.multiply(1.28782, x[1]))))))), x[1])))))), x[1])))
-    return x[0] + np.sin(x[1]) / 5
 
 def f1(x: np.ndarray) -> np.ndarray:
     return np.sin(x[0])
